@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "manifold-antibody"
+name = "template-env"
 version = "0.1.0"
 description = ""
 authors = ["Luke Schiefelbein <luke.schiefelbein@gmail.com>"]
