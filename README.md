@@ -11,15 +11,17 @@
   - Ensure that notebooks are "trusted" in the top right corner to display interactive plots.
 - Download data: `docker compose exec -i notebook python download_data.py` 
 
-# Usage
+## Non-Docker Usage
 
-You can use poetry to run set up an environment without Docker to save on overhead. 
+You can use poetry to setup an environment without Docker to reduce overhead. 
 
 - Install [poetry](https://python-poetry.org/docs/).
-- Configure to create virtual environment in project: `poetry config settings.virtualenvs.in-project true`
-- `poetry install` and point your notebooks to the venv.
+- Configure to create virtual environments in project: `poetry config settings.virtualenvs.in-project true`
+- `poetry install` and point your notebooks to the new venv.
 - To add/remove packages:
   - `poetry {add|remove} {package}` 
   - `poetry export -f requirements.txt --output requirements.txt --without-hashes`. 
-  - Run `docker-compose up --build` to rebuild the image with new packages, or for faster turnaround, `docker-compose exec notebook pip install -r /usr/src/app/requirements.txt`
+  - To update docker containers, run `docker-compose up --build` to rebuild the image with new packages, or, for faster turnaround, `docker-compose exec notebook pip install -r /usr/src/app/requirements.txt`
+- Prefect orion server, etc need to be started manually using the commands in
+  `docker-compose.yml`
 

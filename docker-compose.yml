@@ -1,11 +1,11 @@
 version: "0.0"
 services:
   notebook:
+  #jupyter notebook server
     build: .
     environment:
       - PREFECT_API_URL=http://prefect:4200/api
     ports:
-      #jupyter
       - "8888:8888"
     volumes:
       - ./:/code
@@ -22,10 +22,10 @@ services:
         "--NotebookApp.password=''"
       ]
   prefect:
+  # prefect orchestration server
     build: .
     environment:
       - PREFECT_ORION_API_HOST=0.0.0.0
     ports:
-      # prefect server
       - "4200:4200"
     entrypoint: [ "prefect", "orion", "start" ]
