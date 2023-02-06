@@ -7,7 +7,6 @@ import logging
 
 
 URLS = [
-    # add urls for data to download
     ""
 ]
 

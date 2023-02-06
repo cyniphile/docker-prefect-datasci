@@ -5,13 +5,17 @@ description = ""
 authors = ["Luke Schiefelbein <luke.schiefelbein@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.10, <3.12"
 pandas = "^1.5.3"
 requests = "^2.28.2"
 prefect = "^2.7.11"
 jupyter = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
+black = "^23.1.0"
+mypy = "^0.991"
+pandas-stubs = "^1.5.3"
+types-requests = "^2.28.11"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
