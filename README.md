@@ -3,7 +3,7 @@
 - [Install docker](https://docs.docker.com/get-docker/) and start the daemon.
 - `docker-compose up`  will start the container and print URLs to connect to the jupyter web UI.
 	- If you're using VSCode, install the [Remote Development Extensions Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) to easily run code and otherwise work within the docker container. 
-	- Attach to the `manifold-singlecell-notebook-1` container.
+	- Attach to the `{repo_name}-notebook-1` container.
 	- Be sure to install the VSCode python extension in the *remote* container as well. 
 
 - The Prefect UI is available at `http://localhost:4200/` to view jobs.

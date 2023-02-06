@@ -7,7 +7,8 @@ import logging
 
 
 URLS = [
-    "https://manifold-interview-questions-data.s3.amazonaws.com/comp08_alphaseq/MITLL_AAlphaBio_Ab_Binding_dataset.csv.zip"
+    # add urls for data to download
+    ""
 ]
 
 
