@@ -1,0 +1,4 @@
+# TODO: make global settings
+.venv
+.vscode
+data/*
