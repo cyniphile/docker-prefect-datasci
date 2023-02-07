@@ -15,7 +15,7 @@ def get_git_root():
     return last_cwd
 
 
-LOCAL_DATA_PATH = str(pathlib.Path(get_git_root()))
+LOCAL_DATA_PATH = str(pathlib.Path(get_git_root()) / "data")
 
 
 def get_data_path():
